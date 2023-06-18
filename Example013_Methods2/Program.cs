@@ -13,7 +13,7 @@ void Method2(string msg)
 {
     Console.WriteLine(msg);
 }
-Method2(msg: "Метод 2 указывает сообщение, указанное в аргументе.");
+Method2(msg: "Метод 2 выдает сообщение, указанное в аргументе.");
 
 Вариация метода 2 вида.
 void Method21(string msg1, int count)
