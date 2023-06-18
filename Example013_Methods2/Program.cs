@@ -15,11 +15,11 @@ void Method2(string msg)
 }
 Method2(msg: "Метод 2 выдает сообщение, указанное в аргументе.");
 
-Вариация метода 2 вида.
+//Вариация метода 2 вида.
 void Method21(string msg1, int count)
 {
     int i = 0;
-    while (i < count);
+    while (i < count)
     {
         Console.WriteLine(msg1);
         i++;
