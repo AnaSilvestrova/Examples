@@ -1,2 +1,2 @@
-Learning C#, lesson 1.
+Learning C#.
 Basic programs.
