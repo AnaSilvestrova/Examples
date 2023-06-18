@@ -16,13 +16,40 @@ void Method2(string msg)
 Method2(msg: "Метод 2 выдает сообщение, указанное в аргументе.");
 
 //Вариация метода 2 вида.
-void Method21(string msg1, int count)
+void Method21(string msg, int count)
 {
     int i = 0;
     while (i < count)
     {
-        Console.WriteLine(msg1);
+        Console.WriteLine(msg);
         i++;
     }
 }
-Method21("Метод 21 выводит текст столько раз, сколько указано в счетчике.", 4);
+Method21(msg: "Метод 2.1 выводит текст столько раз, сколько указано в счетчике.", count: 3);
+// Method21(count: 2, msg: "Именнованные аргументы необязательно писать по порядку.");
+
+// Вид 3: методы, которые что-то возвращают, но ничего не принимают.
+int Method3() // Обязательно указать тип данных, которые мы ожидаем.
+{
+    return DateTime.Now. Year;
+}
+
+int year = Method3();
+Console.WriteLine($"Метод 3 выведет значение переменной, которую мы записали в переменной с помощью оператора return, т. е. текущий год --> {year}");
+
+// Вид 4: методы, которые что-то прнимают и что-то возвращают. 
+string Method4(int count, string text)
+{
+    int i = 0;
+    string result = String.Empty; // Изначальное значение переменной - пустая строка.
+
+    while(i < count)
+    {
+        result = result + text;
+        i++;
+    }
+    return result;
+}
+
+string res = Method4(10, "z"); // В "" текст, который будет "склеиваться" 10 раз.
+Console.WriteLine($"Метод 4 выведет строчку указанного текста столько раз, сколько указано в счетчике: {res}");
