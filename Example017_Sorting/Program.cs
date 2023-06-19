@@ -25,6 +25,7 @@ void SelectionSort(int[] array) // Метод для упорядочивани�
         {
             if(array[j] < array[minPosition]) minPosition = j; // Внутренний цикл для нахождения минимума. 
         }
+        
         int temporary = array[i];
         array[i] = array[minPosition]; 
         array[minPosition] = temporary; // Обмен двух переменных местами.
